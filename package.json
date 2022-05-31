@@ -1,0 +1,20 @@
+{
+  "name": "outfitgenerator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "cd /backend && npm start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TimTimich6/outfitmaker.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TimTimich6/outfitmaker/issues"
+  },
+  "homepage": "https://github.com/TimTimich6/outfitmaker#readme"
+}
