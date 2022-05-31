@@ -2,6 +2,8 @@ import express from "express";
 import fileupload from "express-fileupload";
 import { removeBackgroundFromImageFile } from "remove.bg";
 import fs from "fs";
+import dotenv from "dotenv";
+dotenv.config();
 const app = express();
 app.use(express.json());
 app.use(fileupload());
@@ -17,7 +19,7 @@ app.post("/api/upload", async (req: any, res) => {
   try {
     const result = await removeBackgroundFromImageFile({
       path: `src/uploads/${name}`,
-      apiKey: "cxU5uVJ4Cr2fxaJLfQuMLBLW",
+      apiKey: <string>process.env.APIKEY,
       size: "preview",
       type: "product",
       crop: true,
