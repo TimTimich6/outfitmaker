@@ -17,7 +17,7 @@ const CharacterPart = (props) => {
         console.log(image);
         const form = new FormData();
         form.append("photo", image);
-        const resp = await axios.post("/api/upload", form);
+        const resp = await axios.post(`${process.env.REACT_APP_URL || ""}/api/upload`, form);
         if (resp) {
           console.log(resp.data);
           props.update(resp.data);
