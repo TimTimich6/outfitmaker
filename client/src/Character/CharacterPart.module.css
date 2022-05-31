@@ -1,0 +1,43 @@
+.head {
+  height: 6rem;
+  /* width: 6rem; */
+  transform: scale(1.1, 1.1) translateY(0.5rem);
+  z-index: 12;
+}
+
+.shirt {
+  height: 14rem;
+  z-index: 10;
+  transform: scale(1.15, 1.15) translateY(1.1rem);
+
+  /* width: 13rem; */
+}
+
+.pants {
+  height: 23rem;
+  /* width: 9rem; */
+}
+.shoes {
+  height: 6rem;
+  z-index: 9;
+  /* width: 12rem; */
+  transform: scale(1.35, 1.2) translateY(-1.3rem);
+}
+.template {
+  width: 100%;
+}
+.image {
+  object-fit: cover;
+  cursor: pointer;
+}
+.total {
+  background-color: rgb(82, 162, 219);
+  align-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease-out;
+  border-radius: 0.7rem;
+}
+.total:hover {
+  transform: scale(1.05, 1.05) skew(1deg, -1deg);
+  filter: brightness(80%);
+}

@@ -1,0 +1,14 @@
+.button{
+    border-radius:0.5rem;
+    text-decoration: none;
+    border: none;
+    padding:0.2rem 1.5rem;
+    height:min-content;
+    width:min-content;
+
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+.button:hover{
+    filter:brightness(80%)
+}

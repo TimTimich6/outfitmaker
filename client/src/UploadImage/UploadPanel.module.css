@@ -1,0 +1,59 @@
+.panel{
+    width:30%;
+    background-color:rgb(60, 72, 108);
+    border-radius:1rem;
+    border:4px dashed rgb(197, 197, 197);
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    padding:1rem 3rem;
+    gap:1rem;
+    font-size: 1.3rem;
+}
+
+.text{
+    color:rgb(230, 230, 230);
+    font-weight: 300;
+}
+.removedbg{
+    margin-top: 3rem;
+}
+/* loader */
+.ldsRing {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.ldsRing div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border: 8px solid #fff;
+  border-radius: 50%;
+  animation: ldsRing 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #fff transparent transparent transparent;
+}
+.ldsRing div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.ldsRing div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.ldsRing div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes ldsRing {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* end of loader */
